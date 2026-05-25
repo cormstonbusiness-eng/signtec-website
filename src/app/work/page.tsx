@@ -41,7 +41,7 @@ export default function WorkPage() {
       {/* GALLERY */}
       <div className="sec wrap">
         <div className="gallery">
-          <RevealOnScroll delay="1" className="g-item g-w6 g-tall">
+          <RevealOnScroll delay="1" className="g-item">
             <div className="g-image">
               <Image src="/portfolio/9.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
               <div className="ph-label">Project 1</div>
@@ -49,7 +49,7 @@ export default function WorkPage() {
             <div className="g-cap"><span>Shop Signs</span><h4>Project 1</h4></div>
           </RevealOnScroll>
 
-          <RevealOnScroll delay="2" className="g-item g-w6">
+          <RevealOnScroll delay="2" className="g-item">
             <div className="g-image">
               <Image src="/portfolio/10.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
               <div className="ph-label">Project 2</div>
@@ -57,7 +57,7 @@ export default function WorkPage() {
             <div className="g-cap"><span>Fascia Signage</span><h4>Project 2</h4></div>
           </RevealOnScroll>
 
-          <RevealOnScroll delay="3" className="g-item g-w6">
+          <RevealOnScroll delay="3" className="g-item">
             <div className="g-image">
               <Image src="/portfolio/11.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
               <div className="ph-label">Project 3</div>
@@ -65,7 +65,7 @@ export default function WorkPage() {
             <div className="g-cap"><span>Vehicle Graphics</span><h4>Project 3</h4></div>
           </RevealOnScroll>
 
-          <RevealOnScroll delay="1" className="g-item g-w4">
+          <RevealOnScroll delay="1" className="g-item">
             <div className="g-image">
               <Image src="/portfolio/12.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
               <div className="ph-label">Project 4</div>
@@ -73,7 +73,7 @@ export default function WorkPage() {
             <div className="g-cap"><span>Large Format</span><h4>Project 4</h4></div>
           </RevealOnScroll>
 
-          <RevealOnScroll delay="2" className="g-item g-w4">
+          <RevealOnScroll delay="2" className="g-item">
             <div className="g-image">
               <Image src="/portfolio/13.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
               <div className="ph-label">Project 5</div>
@@ -81,7 +81,7 @@ export default function WorkPage() {
             <div className="g-cap"><span>Event Graphics</span><h4>Project 5</h4></div>
           </RevealOnScroll>
 
-          <RevealOnScroll delay="3" className="g-item g-w4">
+          <RevealOnScroll delay="3" className="g-item">
             <div className="g-image">
               <Image src="/portfolio/14.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
               <div className="ph-label">Project 6</div>
@@ -89,7 +89,7 @@ export default function WorkPage() {
             <div className="g-cap"><span>Corporate Signage</span><h4>Project 6</h4></div>
           </RevealOnScroll>
 
-          <RevealOnScroll delay="1" className="g-item g-w8">
+          <RevealOnScroll delay="1" className="g-item">
             <div className="g-image">
               <Image src="/portfolio/15.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
               <div className="ph-label">Project 7</div>
@@ -97,7 +97,7 @@ export default function WorkPage() {
             <div className="g-cap"><span>Fleet Branding</span><h4>Project 7</h4></div>
           </RevealOnScroll>
 
-          <RevealOnScroll delay="2" className="g-item g-w4">
+          <RevealOnScroll delay="2" className="g-item">
             <div className="g-image">
               <Image src="/portfolio/16.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
               <div className="ph-label">Project 8</div>
