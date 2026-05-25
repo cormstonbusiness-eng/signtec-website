@@ -109,15 +109,15 @@ export default function ContactPage() {
 
       {/* MAP BAND */}
       <div className="map-band">
-        <div className="ph ph-1" style={{ position: 'absolute', inset: 0 }}>
-          <div className="ph-label">Castle Vale Enterprise Park · Coventry · B35 6LJ</div>
-        </div>
-        <div className="map-pin">
-          <svg viewBox="0 0 24 24" fill="var(--red)" stroke="#fff" strokeWidth="1.5">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-            <circle cx="12" cy="10" r="3" fill="#fff" />
-          </svg>
-        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.1234567890!2d-1.4542!3d52.5045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876d5d5e8e8e8e9%3A0x1234567890abcdef!2sUnit%20D3%2C%20Park%20Lane%2C%20Castle%20Vale%20Enterprise%20Park%2C%20Coventry%20B35%206LJ!5e0!3m2!1sen!2suk!4v1234567890123"
+          width="100%"
+          height="100%"
+          style={{ border: 0, position: 'absolute', inset: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </div>
     </>
   )
