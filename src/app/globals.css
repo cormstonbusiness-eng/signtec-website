@@ -250,7 +250,7 @@ main { padding-top: 78px; min-height: 100vh; }
 }
 .eyebrow::before { content: ""; width: 38px; height: 2px; background: var(--gold); display: block; }
 
-.hero h1 { font-size: clamp(3.4rem, 10.5vw, 9.2rem); text-transform: uppercase; line-height: 0.9; }
+.hero h1 { font-size: clamp(2.8rem, 8vw, 7rem); text-transform: uppercase; line-height: 1.2; }
 .hero h1 .line { display: block; overflow: hidden; }
 .hero h1 .line span { display: block; transform: translateY(105%); }
 .loaded .hero h1 .line span { animation: slideUp 0.9s var(--ease) forwards; }
@@ -278,21 +278,11 @@ main { padding-top: 78px; min-height: 100vh; }
 
 .hero-content {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 40px;
+  display: block;
   width: 100%;
 }
-.hero-text { max-width: 600px; }
-.hero-image {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 400px;
-}
+.hero-text { max-width: 100%; }
+.hero-image { display: none; }
 .hero-image-glow {
   position: absolute;
   width: 350px;
