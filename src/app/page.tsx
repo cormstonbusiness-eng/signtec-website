@@ -41,8 +41,8 @@ export default function Home() {
           <div className="hero-image">
             <div className="hero-image-glow" />
             <Image
-              src="/Van 1.webp"
-              alt="Professional vehicle signage example - The Window Cleaning Group van wrap"
+              src="/Bus.webp"
+              alt="Professional vehicle signage example - Fleet branding bus wrap"
               fill
               priority
               style={{ objectFit: 'contain' }}
