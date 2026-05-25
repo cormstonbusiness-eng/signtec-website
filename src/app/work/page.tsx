@@ -1,9 +1,22 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import RevealOnScroll from '@/components/RevealOnScroll'
 
-export const metadata = {
-  title: 'Our Work — Signtec | Project Gallery Coventry',
+export const metadata: Metadata = {
+  title: 'Project Gallery | Sign Writing Portfolio Coventry - Signtec',
+  description: 'View Signtec\'s portfolio of completed sign writing projects in Coventry. Shop signs, fleet branding, vehicle wraps & corporate signage.',
+  openGraph: {
+    title: 'Project Gallery | Sign Writing Portfolio Coventry - Signtec',
+    description: 'View Signtec\'s portfolio of completed sign writing projects in Coventry. Shop signs, fleet branding, vehicle wraps & corporate signage.',
+    url: 'https://signtec.co.uk/work',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Project Gallery | Sign Writing Portfolio Coventry - Signtec',
+    description: 'View Signtec\'s portfolio of completed sign writing projects in Coventry. Shop signs, fleet branding, vehicle wraps & corporate signage.',
+  },
 }
 
 export default function WorkPage() {
@@ -17,7 +30,7 @@ export default function WorkPage() {
           <div className="crumb">
             <Link href="/">Home</Link> / <span>Our Work</span>
           </div>
-          <h1>Project <span className="red">Gallery</span></h1>
+          <h1>Sign Writing <span className="red">Project Portfolio</span></h1>
           <p>
             Take a look at our past projects transformed with creativity and care. Every job is
             finished to perfection, ready for proud business owners.

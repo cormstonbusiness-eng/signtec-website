@@ -21,11 +21,38 @@ const sora = Sora({
 })
 
 export const metadata: Metadata = {
-  title: 'Signtec — Sign Writing Coventry | Vehicle Graphics, Shop Signs & Window Tinting',
-  description:
-    'Signtec — professional-grade large format printing and custom graphics in Coventry. Vehicle signage, shop signs, window graphics, vehicle wraps and office window tinting. Call 0800 849 7484.',
-  keywords:
-    'sign writing coventry, sign writer coventry, van signage coventry, car signage coventry, office window tinting coventry, shop signs coventry, window graphics coventry, vehicle wraps coventry',
+  metadataBase: new URL('https://signtec.co.uk'),
+  title: 'Signtec | Sign Writing & Vehicle Graphics Coventry',
+  description: 'Professional sign writing and vehicle graphics in Coventry. Shop signs, fascias, fleet branding, window tinting & large format printing.',
+  keywords: 'sign writing coventry, vehicle graphics, shop signs, fascias, vehicle wraps, window tinting',
+  icons: {
+    icon: '/logo-header.svg',
+    apple: '/logo-header.svg',
+  },
+  openGraph: {
+    title: 'Signtec | Sign Writing & Vehicle Graphics Coventry',
+    description: 'Professional sign writing and vehicle graphics in Coventry. Shop signs, fascias, fleet branding, window tinting & large format printing.',
+    url: 'https://signtec.co.uk',
+    siteName: 'Signtec',
+    type: 'website',
+    images: [
+      {
+        url: '/logo-header.svg',
+        width: 335,
+        height: 113,
+        alt: 'Signtec Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Signtec | Sign Writing & Vehicle Graphics Coventry',
+    description: 'Professional sign writing and vehicle graphics in Coventry. Shop signs, fascias, fleet branding, window tinting & large format printing.',
+    images: ['/logo-header.svg'],
+  },
+  other: {
+    'canonical': 'https://signtec.co.uk',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

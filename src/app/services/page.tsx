@@ -1,8 +1,21 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import RevealOnScroll from '@/components/RevealOnScroll'
 
-export const metadata = {
-  title: 'Services — Signtec | Vehicle Graphics, Shop Signs & Printing Coventry',
+export const metadata: Metadata = {
+  title: 'Services | Sign Writing & Graphics Coventry - Signtec',
+  description: 'Professional sign writing services in Coventry: vehicle wraps, shop signs, fascias, window graphics, tinting & large format printing.',
+  openGraph: {
+    title: 'Services | Sign Writing & Graphics Coventry - Signtec',
+    description: 'Professional sign writing services in Coventry: vehicle wraps, shop signs, fascias, window graphics, tinting & large format printing.',
+    url: 'https://signtec.co.uk/services',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Services | Sign Writing & Graphics Coventry - Signtec',
+    description: 'Professional sign writing services in Coventry: vehicle wraps, shop signs, fascias, window graphics, tinting & large format printing.',
+  },
 }
 
 export default function ServicesPage() {
@@ -16,7 +29,7 @@ export default function ServicesPage() {
           <div className="crumb">
             <Link href="/">Home</Link> / <span>Services</span>
           </div>
-          <h1>Our <span className="red">Services</span></h1>
+          <h1>Sign Writing & <span className="red">Graphics Services</span></h1>
           <p>From initial design and scaling to professional installation, we handle the entire journey of your visual identity.</p>
         </div>
       </div>
@@ -109,7 +122,7 @@ export default function ServicesPage() {
             <h2>Not sure where to <span className="out">start?</span></h2>
             <p>Tell us what you&apos;re trying to achieve and we&apos;ll recommend the right approach — with a free quote attached.</p>
             <div className="cta-btns">
-              <Link href="/contact" className="btn btn-dark"><span>Get a Free Quote</span></Link>
+              <Link href="/contact" className="btn btn-dark"><span>Request a Quote</span></Link>
               <Link href="/work" className="btn btn-ghost" style={{ boxShadow: 'inset 0 0 0 2px var(--ink)', color: 'var(--ink)' }}>
                 <span>See Our Work</span>
               </Link>

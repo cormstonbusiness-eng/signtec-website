@@ -16,8 +16,9 @@ export default function Home() {
           <div className="hero-text">
             <span className="eyebrow">West Midlands</span>
             <h1>
-              <span className="line"><span>SIGN</span></span>
-              <span className="line"><span className="red">WRITING</span></span>
+              <span className="line"><span>Professional</span></span>
+              <span className="line"><span className="red">Sign Writing</span></span>
+              <span className="line"><span>& Graphics</span></span>
             </h1>
             <p className="hero-sub">
               Professional-grade large format printing and custom graphics designed to make you stand
@@ -33,7 +34,7 @@ export default function Home() {
                 </span>
               </Link>
               <Link href="/contact" className="btn btn-ghost">
-                <span>Get a Free Quote</span>
+                <span>Free Quote</span>
               </Link>
             </div>
           </div>
@@ -251,7 +252,7 @@ export default function Home() {
             <h2>Ready to <span className="out">stand out?</span></h2>
             <p>Tell us about your project and we&apos;ll get a free, no-obligation quote back to you fast.</p>
             <div className="cta-btns">
-              <Link href="/contact" className="btn btn-dark"><span>Get a Free Quote</span></Link>
+              <Link href="/contact" className="btn btn-dark"><span>Get Started</span></Link>
               <a href="tel:08008497484" className="btn btn-ghost" style={{ boxShadow: 'inset 0 0 0 2px var(--ink)', color: 'var(--ink)' }}>
                 <span>Call 0800 849 7484</span>
               </a>

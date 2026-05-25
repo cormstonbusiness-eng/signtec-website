@@ -4,7 +4,19 @@ import RevealOnScroll from '@/components/RevealOnScroll'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Contact — Signtec | Free Quote Coventry',
+  title: 'Contact Signtec | Free Quote for Sign Writing Coventry',
+  description: 'Contact Signtec in Coventry for a free quote on sign writing, vehicle graphics, or window tinting services. Call 0800 849 7484.',
+  openGraph: {
+    title: 'Contact Signtec | Free Quote for Sign Writing Coventry',
+    description: 'Contact Signtec in Coventry for a free quote on sign writing, vehicle graphics, or window tinting services. Call 0800 849 7484.',
+    url: 'https://signtec.co.uk/contact',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Contact Signtec | Free Quote for Sign Writing Coventry',
+    description: 'Contact Signtec in Coventry for a free quote on sign writing, vehicle graphics, or window tinting services. Call 0800 849 7484.',
+  },
 }
 
 export default function ContactPage() {
@@ -18,7 +30,7 @@ export default function ContactPage() {
           <div className="crumb">
             <Link href="/">Home</Link> / <span>Contact</span>
           </div>
-          <h1>Contact <span className="red">Us</span></h1>
+          <h1>Get Your Free <span className="red">Sign Writing Quote</span></h1>
           <p>Tell us about your project and we&apos;ll get a free, no-obligation quote back to you as fast as we can.</p>
         </div>
       </div>
