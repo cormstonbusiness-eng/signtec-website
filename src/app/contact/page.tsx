@@ -81,7 +81,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h4>Workshop</h4>
-                <p>Unit D3, Park Lane, Castle Vale Enterprise Park,<br />Coventry, B35 6LJ</p>
+                <p>Unit 28, Walmley Road,<br />Sutton Coldfield,<br />Birmingham, B76 1QN</p>
               </div>
             </div>
 
@@ -110,7 +110,7 @@ export default function ContactPage() {
       {/* MAP BAND */}
       <div className="map-band">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.1234567890!2d-1.4542!3d52.5045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876d5d5e8e8e8e9%3A0x1234567890abcdef!2sUnit%20D3%2C%20Park%20Lane%2C%20Castle%20Vale%20Enterprise%20Park%2C%20Coventry%20B35%206LJ!5e0!3m2!1sen!2suk!4v1234567890123"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.8234567890!2d-1.8234!3d52.5678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876e4d5e8e8e8e9%3A0x9876543210abcdef!2sUnit%2028%20Walmley%20Road!5e0!3m2!1sen!2suk!4v1234567890123"
           width="100%"
           height="100%"
           style={{ border: 0, position: 'absolute', inset: 0 }}

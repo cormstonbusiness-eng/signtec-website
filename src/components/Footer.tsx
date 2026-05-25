@@ -55,7 +55,7 @@ export default function Footer() {
             <p><strong>0800 849 7484</strong></p>
             <p><a href="mailto:info@signtec.co.uk">info@signtec.co.uk</a></p>
             <p style={{ marginBottom: '18px' }}>
-              Unit D3, Park Lane, Castle Vale Enterprise Park, Coventry, B35 6LJ
+              Unit 28, Walmley Road, Sutton Coldfield, Birmingham, B76 1QN
             </p>
             <h5 style={{ marginBottom: '10px' }}>Newsletter</h5>
             <p style={{ marginBottom: '6px' }}>Stay up to date and get 10% off your next print.</p>
