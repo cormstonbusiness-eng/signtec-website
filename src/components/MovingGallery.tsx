@@ -28,11 +28,6 @@ export default function MovingGallery() {
                 priority={i < 8}
                 style={{ objectFit: 'cover' }}
               />
-              <div className="ph-label">{item.label}</div>
-            </div>
-            <div className="mg-cap">
-              <span>{item.sub}</span>
-              <h4>{item.title}</h4>
             </div>
           </div>
         ))}
