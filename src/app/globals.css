@@ -278,7 +278,7 @@ main { padding-top: 78px; min-height: 100vh; }
 
 .hero-content { position: relative; display: block; width: 100%; }
 .hero-text { max-width: 600px; }
-.hero-image { position: absolute; right: 20px; bottom: -40px; display: flex; justify-content: center; align-items: center; width: 450px; height: 350px; }
+.hero-image { position: absolute; right: 20px; bottom: 0; display: flex; justify-content: center; align-items: center; width: 450px; height: 350px; }
 .hero-image-glow {
   position: absolute;
   width: 350px;
