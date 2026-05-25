@@ -629,43 +629,43 @@ main { padding-top: 78px; min-height: 100vh; }
 .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
 /* ---------- FOOTER ---------- */
-footer { background: var(--ink); color: var(--paper); padding: 80px 0 40px; }
+footer { background: var(--paper); color: var(--ink); padding: 80px 0 40px; }
 .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.4fr; gap: 50px; margin-bottom: 60px; }
 .foot-logo { font-family: 'Archivo Black', sans-serif; font-size: 1.9rem; letter-spacing: -0.04em; margin-bottom: 18px; }
 .foot-logo .r { color: var(--red); }
-.foot-about { font-size: 0.95rem; line-height: 1.7; color: rgba(244, 241, 234, 0.6); font-weight: 300; max-width: 300px; }
+.foot-about { font-size: 0.95rem; line-height: 1.7; color: rgba(13, 15, 18, 0.6); font-weight: 300; max-width: 300px; }
 .foot-col h5 {
   font-family: 'Archivo Black', sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 22px;
-  color: var(--gold);
+  color: var(--red);
 }
 .foot-col a, .foot-col p {
   display: block;
   font-size: 0.94rem;
-  color: rgba(244, 241, 234, 0.62);
+  color: rgba(13, 15, 18, 0.62);
   margin-bottom: 13px;
   font-weight: 300;
   transition: color 0.3s, transform 0.3s var(--ease);
 }
 .foot-col a:hover { color: var(--red); transform: translateX(5px); }
-.foot-contact strong { color: var(--paper); font-weight: 600; }
+.foot-contact strong { color: var(--ink); font-weight: 600; }
 
 .news-form { display: flex; gap: 0; margin-top: 8px; max-width: 300px; }
 .news-form input {
   flex: 1;
   padding: 13px 16px;
-  background: rgba(244, 241, 234, 0.08);
-  border: 1px solid rgba(244, 241, 234, 0.18);
+  background: rgba(13, 15, 18, 0.06);
+  border: 1px solid rgba(13, 15, 18, 0.2);
   border-right: 0;
-  color: var(--paper);
+  color: var(--ink);
   font-family: 'Sora', sans-serif;
   font-size: 0.9rem;
   border-radius: 6px 0 0 6px;
 }
-.news-form input::placeholder { color: rgba(244, 241, 234, 0.4); }
+.news-form input::placeholder { color: rgba(13, 15, 18, 0.4); }
 .news-form input:focus { outline: none; border-color: var(--red); }
 .news-form button {
   padding: 0 22px;
@@ -678,10 +678,10 @@ footer { background: var(--ink); color: var(--paper); padding: 80px 0 40px; }
   border-radius: 0 6px 6px 0;
   transition: background 0.3s;
 }
-.news-form button:hover { background: var(--paper); color: var(--ink); }
+.news-form button:hover { background: var(--ink); color: var(--paper); }
 
 .foot-bottom {
-  border-top: 1px solid rgba(244, 241, 234, 0.12);
+  border-top: 1px solid rgba(13, 15, 18, 0.12);
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
@@ -689,18 +689,19 @@ footer { background: var(--ink); color: var(--paper); padding: 80px 0 40px; }
   gap: 20px;
   flex-wrap: wrap;
   font-size: 0.84rem;
-  color: rgba(244, 241, 234, 0.45);
+  color: rgba(13, 15, 18, 0.45);
 }
 .socials { display: flex; gap: 12px; }
 .socials a {
   width: 38px;
   height: 38px;
-  border: 1px solid rgba(244, 241, 234, 0.2);
+  border: 1px solid rgba(13, 15, 18, 0.2);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.35s var(--ease);
+  color: var(--ink);
 }
 .socials a:hover { background: var(--red); border-color: var(--red); transform: translateY(-3px); }
 .socials svg { width: 16px; height: 16px; }
