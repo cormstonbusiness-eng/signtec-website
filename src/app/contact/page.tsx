@@ -94,7 +94,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h4>Opening Hours</h4>
-                <p>Mon–Fri: 8:00am – 5:30pm<br />Saturday: By appointment</p>
+                <p>Mon–Sat: 8:00am – 5:30pm<br />Closed Sundays</p>
               </div>
             </div>
           </RevealOnScroll>
