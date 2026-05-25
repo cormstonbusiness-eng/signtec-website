@@ -187,7 +187,6 @@ export default function WorkPage() {
             </RevealOnScroll>
           </div>
         </div>
-          </div>
         </GalleryLightbox>
       </div>
 
