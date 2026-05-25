@@ -24,6 +24,14 @@ export default function GalleryLightbox({ images, children }: LightboxProps) {
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [isOpen, currentIndex])
 
+  useEffect(() => {
+    if (!isOpen) return
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [isOpen])
+
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))
   }
@@ -32,26 +40,14 @@ export default function GalleryLightbox({ images, children }: LightboxProps) {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))
   }
 
-  const handleImageClick = (index: number) => {
+  const openLightbox = (index: number) => {
     setCurrentIndex(index)
     setIsOpen(true)
   }
 
   return (
-    <>
-      {/* Render gallery with click handlers */}
-      <div
-        onClick={(e) => {
-          const target = e.target as HTMLElement
-          const imageDiv = target.closest('[data-gallery-image]')
-          if (imageDiv) {
-            const index = parseInt(imageDiv.getAttribute('data-index') || '0')
-            handleImageClick(index)
-          }
-        }}
-      >
-        {children}
-      </div>
+    <GalleryProvider onOpen={openLightbox}>
+      {children}
 
       {/* Lightbox modal */}
       {isOpen && (
