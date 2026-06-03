@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import Preloader from '@/components/Preloader'
 import ScrollProgress from '@/components/ScrollProgress'
 import BackToTop from '@/components/BackToTop'
+import { CartProvider } from '@/context/CartContext'
 
 const archivoBlack = Archivo_Black({
   weight: '400',
@@ -59,12 +60,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${archivoBlack.variable} ${sora.variable}`}>
       <body>
-        <Preloader />
-        <ScrollProgress />
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <BackToTop />
+        <CartProvider>
+          <Preloader />
+          <ScrollProgress />
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <BackToTop />
+        </CartProvider>
       </body>
     </html>
   )

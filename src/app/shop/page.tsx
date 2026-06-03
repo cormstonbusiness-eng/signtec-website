@@ -2,16 +2,37 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
-import type { Metadata } from 'next'
 import { products } from '@/lib/products'
-import { Product } from '@/lib/types/product'
+import { Product, CartItem } from '@/lib/types/product'
 import ProductGrid from '@/components/ProductGrid'
 import CategoryFilter from '@/components/CategoryFilter'
+import CartDrawer from '@/components/CartDrawer'
 import RevealOnScroll from '@/components/RevealOnScroll'
+import { useCart } from '@/context/CartContext'
+
+function ShoppingCartButton({ onClick }: { onClick: () => void }) {
+  const { itemCount } = useCart()
+
+  return (
+    <button
+      onClick={onClick}
+      className="cart-icon-btn"
+      aria-label={`Shopping cart with ${itemCount} item${itemCount !== 1 ? 's' : ''}`}
+    >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <circle cx="9" cy="21" r="1" />
+        <circle cx="20" cy="21" r="1" />
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+      </svg>
+      {itemCount > 0 && <span className="cart-badge">{itemCount}</span>}
+    </button>
+  )
+}
 
 export default function ShopPage() {
   const [activeCategory, setActiveCategory] = useState('all')
-  const [cartCount, setCartCount] = useState(0)
+  const [isCartOpen, setIsCartOpen] = useState(false)
+  const { addItem } = useCart()
 
   const categories = useMemo(
     () => Array.from(new Set(products.map((p) => p.category))),
@@ -26,23 +47,15 @@ export default function ShopPage() {
   }, [activeCategory])
 
   const handleAddToCart = (product: Product) => {
-    const cart = JSON.parse(localStorage.getItem('cart') || '[]')
-    const existingItem = cart.find((item: any) => item.id === product.id)
-
-    if (existingItem) {
-      existingItem.quantity += 1
-    } else {
-      cart.push({ ...product, quantity: 1 })
-    }
-
-    localStorage.setItem('cart', JSON.stringify(cart))
-    setCartCount(cart.reduce((sum: number, item: any) => sum + item.quantity, 0))
-
+    const cartItem: CartItem = { ...product, quantity: 1 }
+    addItem(cartItem)
     alert('Added to cart!')
   }
 
   return (
     <>
+      <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+
       {/* PAGE HERO */}
       <div className="page-hero">
         <div className="hero-bg" />
@@ -60,14 +73,15 @@ export default function ShopPage() {
 
       {/* FILTERS & PRODUCTS */}
       <div className="sec wrap">
-        <div style={{ marginBottom: '40px' }}>
-          <h2 style={{ marginBottom: '20px' }}>Shop Products</h2>
-          <CategoryFilter
-            categories={categories}
-            activeCategory={activeCategory}
-            onCategoryChange={setActiveCategory}
-          />
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '40px' }}>
+          <h2 style={{ margin: 0 }}>Shop Products</h2>
+          <ShoppingCartButton onClick={() => setIsCartOpen(true)} />
         </div>
+        <CategoryFilter
+          categories={categories}
+          activeCategory={activeCategory}
+          onCategoryChange={setActiveCategory}
+        />
 
         {filteredProducts.length > 0 ? (
           <ProductGrid
