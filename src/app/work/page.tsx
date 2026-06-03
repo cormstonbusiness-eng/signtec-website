@@ -43,7 +43,7 @@ export default function WorkPage() {
         <div className="gallery">
           <RevealOnScroll delay="1" className="g-item">
             <div className="g-image">
-              <Image src="/portfolio/1.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
+              <Image src="/portfolio/1.jpg" alt="Project" fill style={{ objectFit: 'cover' }} />
             </div>
           </RevealOnScroll>
 
@@ -55,31 +55,31 @@ export default function WorkPage() {
 
           <RevealOnScroll delay="3" className="g-item">
             <div className="g-image">
-              <Image src="/portfolio/3.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
+              <Image src="/portfolio/3.jpg" alt="Project" fill style={{ objectFit: 'cover' }} />
             </div>
           </RevealOnScroll>
 
           <RevealOnScroll delay="1" className="g-item">
             <div className="g-image">
-              <Image src="/portfolio/4.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
+              <Image src="/portfolio/4.jpg" alt="Project" fill style={{ objectFit: 'cover' }} />
             </div>
           </RevealOnScroll>
 
           <RevealOnScroll delay="2" className="g-item">
             <div className="g-image">
-              <Image src="/portfolio/5.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
+              <Image src="/portfolio/5.jpg" alt="Project" fill style={{ objectFit: 'cover' }} />
             </div>
           </RevealOnScroll>
 
           <RevealOnScroll delay="3" className="g-item">
             <div className="g-image">
-              <Image src="/portfolio/6.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
+              <Image src="/portfolio/6.jpg" alt="Project" fill style={{ objectFit: 'cover' }} />
             </div>
           </RevealOnScroll>
 
           <RevealOnScroll delay="1" className="g-item">
             <div className="g-image">
-              <Image src="/portfolio/7.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
+              <Image src="/portfolio/7.jpg" alt="Project" fill style={{ objectFit: 'cover' }} />
             </div>
           </RevealOnScroll>
 
@@ -133,19 +133,37 @@ export default function WorkPage() {
 
           <RevealOnScroll delay="1" className="g-item">
             <div className="g-image">
-              <Image src="/portfolio/16.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
+              <Image src="/portfolio/16.png" alt="Project" fill style={{ objectFit: 'cover' }} />
             </div>
           </RevealOnScroll>
 
           <RevealOnScroll delay="2" className="g-item">
             <div className="g-image">
-              <Image src="/portfolio/17.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
+              <Image src="/portfolio/17.png" alt="Project" fill style={{ objectFit: 'cover' }} />
             </div>
           </RevealOnScroll>
 
           <RevealOnScroll delay="3" className="g-item">
             <div className="g-image">
-              <Image src="/portfolio/18.jpeg" alt="Project" fill style={{ objectFit: 'cover' }} />
+              <Image src="/portfolio/18.png" alt="Project" fill style={{ objectFit: 'cover' }} />
+            </div>
+          </RevealOnScroll>
+
+          <RevealOnScroll delay="1" className="g-item">
+            <div className="g-image">
+              <Image src="/portfolio/19.png" alt="Project" fill style={{ objectFit: 'cover' }} />
+            </div>
+          </RevealOnScroll>
+
+          <RevealOnScroll delay="2" className="g-item">
+            <div className="g-image">
+              <Image src="/portfolio/20.png" alt="Project" fill style={{ objectFit: 'cover' }} />
+            </div>
+          </RevealOnScroll>
+
+          <RevealOnScroll delay="3" className="g-item">
+            <div className="g-image">
+              <Image src="/portfolio/21.png" alt="Project" fill style={{ objectFit: 'cover' }} />
             </div>
           </RevealOnScroll>
         </div>
