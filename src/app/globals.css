@@ -1850,6 +1850,7 @@ a, button, input, textarea, .svc-card, .g-item, .step, .tag, .info-block {
 .checkout-form h2 {
   font-size: 1.2rem;
   margin-bottom: 8px;
+  color: var(--ink);
 }
 
 .form-row {
@@ -1873,6 +1874,7 @@ a, button, input, textarea, .svc-card, .g-item, .step, .tag, .info-block {
 .field label {
   font-weight: 500;
   font-size: 0.95rem;
+  color: var(--ink);
 }
 
 .field input {
@@ -1882,6 +1884,7 @@ a, button, input, textarea, .svc-card, .g-item, .step, .tag, .info-block {
   font-size: 0.95rem;
   font-family: 'Sora', sans-serif;
   transition: all 0.3s var(--ease);
+  color: var(--ink);
 }
 
 .field input:focus {
