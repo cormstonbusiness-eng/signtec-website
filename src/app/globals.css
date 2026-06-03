@@ -1800,11 +1800,12 @@ a, button, input, textarea, .svc-card, .g-item, .step, .tag, .info-block {
 .item-info h4 {
   font-size: 0.95rem;
   margin-bottom: 4px;
+  color: var(--ink);
 }
 
 .item-info p {
   font-size: 0.85rem;
-  color: var(--steel);
+  color: var(--ink);
 }
 
 .item-price {
@@ -1825,6 +1826,7 @@ a, button, input, textarea, .svc-card, .g-item, .step, .tag, .info-block {
   align-items: center;
   font-size: 1.1rem;
   font-weight: 600;
+  color: var(--ink);
 }
 
 .total-price {

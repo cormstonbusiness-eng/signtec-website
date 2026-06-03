@@ -143,7 +143,7 @@ export default function CheckoutPage() {
               <span className="total-price">£{total.toFixed(2)}</span>
             </div>
 
-            <p style={{ fontSize: '0.85rem', color: 'var(--steel)', marginTop: '16px' }}>
+            <p style={{ fontSize: '0.85rem', color: 'var(--ink)', marginTop: '16px' }}>
               All prices include VAT. Shipping costs will be calculated based on your location.
             </p>
           </RevealOnScroll>
