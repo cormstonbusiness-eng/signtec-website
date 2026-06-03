@@ -78,8 +78,8 @@ export default function Home() {
           <RevealOnScroll delay="2">
             <div className="stats">
               <div className="stat">
-                <div className="stat-num">25<span className="red">+</span></div>
-                <div className="stat-label">Years on the road</div>
+                <div className="stat-num">40<span className="red">years</span></div>
+                <div className="stat-label">Family run business</div>
               </div>
               <div className="stat">
                 <div className="stat-num">720<span className="red">dpi</span></div>
