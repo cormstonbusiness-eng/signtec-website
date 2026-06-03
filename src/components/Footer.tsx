@@ -1,19 +1,8 @@
 'use client'
-import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Footer() {
-  const [email, setEmail] = useState('')
-  const [subscribed, setSubscribed] = useState(false)
-
-  const handleSubscribe = () => {
-    if (email.trim()) {
-      setSubscribed(true)
-      setEmail('')
-      setTimeout(() => setSubscribed(false), 2500)
-    }
-  }
 
   return (
     <footer>
@@ -54,21 +43,9 @@ export default function Footer() {
             <h5>Get In Touch</h5>
             <p><strong>+44 7970 633496</strong></p>
             <p><a href="mailto:info@signtec.co.uk">info@signtec.co.uk</a></p>
-            <p style={{ marginBottom: '18px' }}>
+            <p>
               Unit 28, Walmley Road, Sutton Coldfield, Birmingham, B76 1QN
             </p>
-            <h5 style={{ marginBottom: '10px' }}>Newsletter</h5>
-            <p style={{ marginBottom: '6px' }}>Stay up to date and get 10% off your next print.</p>
-            <div className="news-form">
-              <input
-                type="email"
-                placeholder="your email..."
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && handleSubscribe()}
-              />
-              <button onClick={handleSubscribe}>{subscribed ? 'Done ✓' : 'Subscribe'}</button>
-            </div>
           </div>
         </div>
 
