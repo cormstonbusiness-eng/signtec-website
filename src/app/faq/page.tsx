@@ -25,7 +25,7 @@ export default function FAQPage() {
           <h2>Frequently Asked Questions</h2>
 
           <h3>How do I get a quote?</h3>
-          <p>Contact us using the contact form, call us on 0800 849 7484, or email us. We'll provide a free, no-obligation quote within 24-48 hours.</p>
+          <p>Contact us using the contact form, call us on +44 7970 633496, or email us. We'll provide a free, no-obligation quote within 24-48 hours.</p>
 
           <h3>How long does a typical project take?</h3>
           <p>Timelines vary depending on the project scope. Simple vehicle wraps may take 1-2 weeks, while larger projects may take longer. We'll provide an estimated timeline with your quote.</p>
@@ -62,7 +62,7 @@ export default function FAQPage() {
             <p>Contact us directly:</p>
             <p>
               <strong>Signtec</strong><br />
-              Phone: <a href="tel:08008497484">0800 849 7484</a><br />
+              Phone: <a href="tel:+447970633496">+44 7970 633496</a><br />
               Email: <a href="mailto:info@signtec.co.uk">info@signtec.co.uk</a>
             </p>
           </div>

@@ -5,17 +5,17 @@ import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contact Signtec | Free Quote for Sign Writing Coventry',
-  description: 'Contact Signtec in Coventry for a free quote on sign writing, vehicle graphics, or window tinting services. Call 0800 849 7484.',
+  description: 'Contact Signtec in Coventry for a free quote on sign writing, vehicle graphics, or window tinting services. Call +44 7970 633496.',
   openGraph: {
     title: 'Contact Signtec | Free Quote for Sign Writing Coventry',
-    description: 'Contact Signtec in Coventry for a free quote on sign writing, vehicle graphics, or window tinting services. Call 0800 849 7484.',
+    description: 'Contact Signtec in Coventry for a free quote on sign writing, vehicle graphics, or window tinting services. Call +44 7970 633496.',
     url: 'https://signtec.co.uk/contact',
     type: 'website',
   },
   twitter: {
     card: 'summary',
     title: 'Contact Signtec | Free Quote for Sign Writing Coventry',
-    description: 'Contact Signtec in Coventry for a free quote on sign writing, vehicle graphics, or window tinting services. Call 0800 849 7484.',
+    description: 'Contact Signtec in Coventry for a free quote on sign writing, vehicle graphics, or window tinting services. Call +44 7970 633496.',
   },
 }
 
@@ -55,7 +55,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h4>Call Us — Freephone</h4>
-                <p><a href="tel:08008497484">0800 849 7484</a></p>
+                <p><a href="tel:+447970633496">+44 7970 633496</a></p>
               </div>
             </div>
 

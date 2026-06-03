@@ -47,7 +47,7 @@ export default function PrivacyPage() {
           <p>If you have questions about our privacy practices, please contact us at:</p>
           <p>
             <strong>Signtec</strong><br />
-            Phone: <a href="tel:08008497484">0800 849 7484</a><br />
+            Phone: <a href="tel:+447970633496">+44 7970 633496</a><br />
             Email: <a href="mailto:info@signtec.co.uk">info@signtec.co.uk</a>
           </p>
 

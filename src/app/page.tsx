@@ -253,8 +253,8 @@ export default function Home() {
             <p>Tell us about your project and we&apos;ll get a free, no-obligation quote back to you fast.</p>
             <div className="cta-btns">
               <Link href="/contact" className="btn btn-dark"><span>Get Started</span></Link>
-              <a href="tel:08008497484" className="btn btn-ghost" style={{ boxShadow: 'inset 0 0 0 2px var(--ink)', color: 'var(--ink)' }}>
-                <span>Call 0800 849 7484</span>
+              <a href="tel:+447970633496" className="btn btn-ghost" style={{ boxShadow: 'inset 0 0 0 2px var(--ink)', color: 'var(--ink)' }}>
+                <span>Call +44 7970 633496</span>
               </a>
             </div>
           </RevealOnScroll>
